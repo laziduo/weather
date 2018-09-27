@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="http:////at.alicdn.com/t/font_853109_ros6e1iq5k9.css"/>
+    <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+   
+    
+</head>
+<body>
+<!--//1、获取默认城市的天气信息
+//2、获取所有城市信息
+//3、点击每个城市可以获取当前城市的天气信息
+//4、在搜索框内输入要搜索的城市,点击搜索按钮可以进行搜索-->
+
+	<section>
+		<div class="top">
+			<span></span>
+			<p><i class="iconfont icon-location"> </i><span>太原市 阳曲县</span></p>
+			<!--<i class="iconfont icon-tupian1"></i>-->
+			<div class="photo"><img src="img/zhaopian.png" alt="" /></div>
+		</div>
+		<div class="air">
+			<p>空气</p>
+			<p class="kongqi">轻度污染</p>
+		</div>
+		<p class="wendu">0°</p>
+		<p clas="tianqi">晴</p>
+		<p><span class="feng">风向 </span> <span class="shidu">西南风</span></p>
+		<p>天气冷了，注意保暖</p>
+		<img src="img/screen.png"/>
+	</section>
+	<div class="current">
+		<div class="tody">
+			<p><span>今天</span><span class="wendutody">-1/11ºC</span></p>
+			<p><span class="tianqitody">晴转多云</span><img src="img/0.png" alt="" class="tubiao"/></p>
+		</div>
+		<div class="tomorrow">
+			<p><span>明天</span><span class="wenduTo">3/13ºC</span></p>
+			<p><span class="tianqiTo">晴</span><img src="img/0.png" alt="" class="tubiaoTo"/></p>
+		</div>
+	</div>
+	<div class="forecast">
+		<ul class="forecastInfo">
+			<!--<li>
+				<p class="time">12:00</p>
+				<img src="img/0.png"/>
+				<p>0°</p>
+			</li>-->
+			
+		</ul>
+	</div>
+	<div class="contain">
+		<ul class="container">
+			<!--<li>
+				<p>昨天</p>
+				<p>01/20</p>
+				<p>多云</p>
+				<img src="img/0.png" alt="" />
+				<p>13°</p>
+				<p>13°</p>
+				<img src="img/0.png" alt="" />
+				<p>多云</p>
+				<p>西北风</p>
+				<p>3级</p>
+			</li>-->
+		</ul>
+	</div>
+	<ul class="recommend">
+		<li>
+			<i class="iconfont icon-san"></i>
+			<p>不带伞</p>
+			<span>雨伞</span>
+		</li>
+		<li>
+			<i class="iconfont icon-yifu" style="color: #E1A5C5"></i>
+			<p>冷</p>
+			<span>穿衣</span>
+		</li>
+		<li>
+			<i class="iconfont icon-iconset0451" style="color: #D7A596"></i>
+			<p>较弱</p>
+			<span>防晒</span>
+		</li>
+		<li>
+			<i class="iconfont icon-yao" style="color: #DFC79B"></i>
+			<p>较已发</p>
+			<span>感冒</span>
+		</li>
+		<li>
+			<i class="iconfont icon-lanqiu" style="color: #E8DBA3"></i>
+			<p>轻不宜</p>
+			<span>运动</span>
+		</li>
+		<li>
+			<i class="iconfont icon-xiche" style="color: #AFE4A1"></i>
+			<p>较适宜</p>
+			<span>洗车</span>
+		</li>
+		<li>
+			<i class="iconfont icon-yu" style="color: #9ADCD0"></i>
+			<p>不宜</p>
+			<span>钓鱼</span>
+		</li>
+		<li>
+			<i class="iconfont icon-honglvdeng" style="color: #A7B7BF"></i>
+			<p>良好</p>
+			<span>交通</span>
+		</li>
+	</ul>
+	<p class="p">数据来源于中国天气网</p>
+	<div class="catogry">
+		<div class="search">
+			<input type="text" placeholder="搜索市、区、县" />
+			<span class="cancel">取消</span>
+			<p><i class="iconfont icon-sousuo"></i></p>
+		</div>
+	    <div class="city">
+	    	<!--<p></p>
+	    	<ul>
+	    	</ul>-->
+	    </div>
+	</div>
+</body>
+</html>
+<script src="jquery/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/index.js"> </script>	
+
